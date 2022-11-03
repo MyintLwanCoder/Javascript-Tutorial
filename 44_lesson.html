@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Writing Simple Email validator program</title>
+  </head>
+  <body>
+    <script>
+      var input = prompt('Enter Your Email Address:: ');
+      // var regex = /\S+@\S+.\S/; // RegExp Literal
+      var regex =/[a-z0-9]+@[a-z0-9]+\.[a-z]+/i; 
+
+      // var result = input.match(regex);
+
+      var result = regex.test(input);
+
+      // RegExp.protottype.test() => test method
+      //String.prototype.match() => match method
+
+      if(result === true) {
+        // not a vaild email
+      }else{
+        // valid email
+      } 
+
+      document.write(result);
+      console.log(result);
+      // abc@gmail.com - valid mail
+      //string before '@' 
+      //A '@' sign
+      //domain name which is again, astring.[only lphanumeric]
+      // . 
+      //top level domain which is again astring [only alphanumeric]
+    </script>
+  </body>
+</html>

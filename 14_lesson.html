@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>More On Prototypes</title>
+  </head>
+  <body>
+    <script>
+      function AnreaofSquare(x) {
+        this.side = x;
+        this.area = function () {
+          return this.side * this.side;
+        }
+        this.perimeter = function() {
+         return 1;
+        }
+      }
+      function PerimeterOfSquare(x) {
+       this.side =x;
+       this.perimeter = function() {
+        return 4*this.side;
+       }
+      }
+
+      AnreaofSquare.prototype = new PerimeterOfSquare(10);
+      var square = new AnreaofSquare(10); //[[prototype]]
+
+      // console.log(square.area());
+      console.log(square.perimeter());
+    </script>
+  </body>
+</html>

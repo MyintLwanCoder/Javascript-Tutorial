@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Event Attributes</title>
+  </head>
+  <body>
+   <!-- <input type="text" onmouseover="aNotify()"> 
+   -->
+   <!-- <input type="text" onmousedown="aNotify()"> -->
+   <!-- <input type="text" onclick="aNotify()"> -->
+
+     <input type="text" ondblclick="aNotfy(this)" value="1234">
+    <script>
+        // function aNotify() {
+        //   console.log('I am Begin Hovered')
+        // }
+        ////////////////////////////////
+        //   function aNotify() {
+        //   console.log('I am Begin MouseDown')
+        // }
+        //////////////////////////////////
+        //  function aNotify() {
+        //   console.log('I am Begin Click')
+        // }
+
+        function aNotfy(e) {
+         alert('You Just entered' +e.value);
+         // console.log(e.value);
+        }
+    </script>
+  </body>
+</html>

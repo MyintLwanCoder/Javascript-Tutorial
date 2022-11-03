@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Some Useful Quantifiers In Regex</title>
+  </head>
+  <body>
+    <script>
+      //  var myString = "I've got a couple of car in my house.";
+
+      //  var regex = /car?s/;
+
+      //  var myString = "Today Is 23rd Feb.";
+
+      // var myString = "Today";
+
+      //  var myString = "AAAABBBBAAACCCCCDDDDDD";
+
+       var myString = "AAA||AAAA||AAAAA||AAAAAA";
+
+       var regex = /A{3,5}/g;
+      //  var regex = /\dr?d?/;
+      //  var regex = /\d+/;
+
+       var result = myString.match(regex);
+       console.log(result);
+
+       // * - Match AN expression 0 OR MORE TIMES
+       // + - Match AN expression 1 OR MORE TIMES
+       // ?
+       //{ }
+       //{ }
+       //{ }
+       //{ }
+    </script>
+  </body>
+</html>

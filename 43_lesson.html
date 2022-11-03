@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Simple Regex Program</title>
+  </head>
+  <body>
+    <script>
+       var input = prompt('Enter Some Value');
+      // var regex = /\d/g; // to match any digit which is a number
+      // var regex = /\d+/g; // ab123de3
+      // var regex = /c+a/g;
+      // var regex = /c+/g;
+      var regex = /c/g;
+       var result = input.match(regex);
+       console.log(typeof result);
+       console.log(result);
+    </script>
+  </body>
+</html>

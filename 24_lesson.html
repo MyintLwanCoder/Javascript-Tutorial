@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Parsing String To Integer</title>
+  </head>
+  <body>
+    <script>
+      //  var x = "1024";
+      //  var x = "1024";
+       var x = "ABCD";
+       
+       a = performance.now();
+        
+             console.log(+x); //slowest
+
+       b = performance.now();
+
+             console.log(b-a);
+
+       a = performance.now();
+
+       console.log(parseInt(x, 10)); // base 10, binary base 2, base 8, base 16
+     
+            //  console.log(parseInt(x)); // base 10, binary base 2, base 8, base 16
+       
+       b = performance.now();
+
+             console.log(b-a);
+
+       a = performance.now();
+
+             console.log(x*1);
+       
+       b = performance.now();
+             console.log(b-a);
+    </script>
+  </body>
+</html>

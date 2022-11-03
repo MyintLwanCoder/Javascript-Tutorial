@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Private Methods/Properties</title>
+  </head>
+  <body>
+    <script>
+        function PetrolPump(petrol_liters){
+          // private vars
+           petrol_price_per_liter = 50; // 60 INR = 15
+           totalPrice = function() {
+            return petrol_price_per_liter*petrol_liters;
+           }
+           // public
+           this.price = totalPrice(); //accessible by this.fill();
+           return 'Your Total Price is:'+this.price;
+        }
+
+        var car = new PetrolPump(5);
+        console.log(car.fill());
+        console.log(car.totalPrice()); //error
+    </script>
+  </body>
+</html>

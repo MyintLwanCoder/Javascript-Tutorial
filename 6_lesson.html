@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Transvering DOM</title>
+  </head>
+  <body>
+
+   <!-- Get Element By ID -->
+
+   <!-- <div id="contents">My Contents Here </div>
+   <ul>
+     <li class="a">Content 1</li>
+     <li class="a">Content 2</li>
+     <li class="a">Content 3</li>
+     <li class="a">Content 4</li>
+     <li class="a">Content 5</li>
+   </ul>
+    <script> 
+      var c = document.getElementById('contents').innerHTML;
+
+      var c = document.getElementById('contents').innerText;
+
+      alert(c);
+
+      var c = document.getElementsByIdClassName('a');
+      // console.log(typeof(c));
+      var firstElem = c[0].innerText;
+      alert(firstElem);
+    </script> -->
+
+    <!-- Query Selector -->
+
+    <!-- <div>ABC</div>
+    <div>DEF</div> -->
+    <script>
+      // var c = document.querySelector('div').innerHTML;
+      // // alert(c);
+      // // alert(typeof(c));
+      // alert(c[1].innerText);
+      
+      // var c = document.createElement('div');
+      // var d = document.createTextNode('Hello World! I\'ve been with javascript!');
+      // c.appendChild(d);
+      // document.body.appendChild(c);
+
+      // document.getElementById('myBody');
+     </script>
+
+     <!-- CSS -->
+
+     <!-- <div>ABC</div>
+    <div>DEF</div> -->
+     <script>
+     // var c = document.querySelector('div');
+     //  c.style.background = "black";
+     //  c.style.color = "white";
+   
+     </script>
+
+     <!-- Nested Dom -->
+      <div id="one">
+     <!-- <span>Text Node 1</span>
+     <div>Text Node 2</div> -->
+    </div>
+     <script>
+     var c = document.getElementById('one');
+    
+     // c.removeChild(c.childNodes[0]);
+     
+     if(c.hasChildNodes()) {alert('true');} else { alert('false');}
+      
+     c.removeChild(c.querySelector('span'));
+     </script>
+  </body>
+</html>

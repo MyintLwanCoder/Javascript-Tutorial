@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Base 64 Encode</title>
+  </head>
+  <body>
+    <script>
+      var myString = "I love to code in javascript! What a wonderful language it is!";
+      var b64 = btoa(myString);
+      var unicode = atob(b64);
+      console.log(b64);
+      console.log(unicode);
+    </script>
+  </body>
+</html>

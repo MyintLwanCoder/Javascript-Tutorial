@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Revision</title>
+  </head>
+  <body>
+    <div id="helloworld">Hello World</div>
+    <script>
+      //  var MyDiv = document.getElementById('helloWorld').innerText;
+      //  var myDiv2 = document.querySelector('div').innerText;
+      //  var myDiv3 = document.querySelectorAll('div')[0].innerText;
+      //  var myDiv4 = document.getElementsByTagName('div')[0].innerText;
+
+      //  console.log(myDiv+' '+myDiv2+' '+ myDiv3+' '+myDiv4);
+
+      //////////////////////////////////////////////
+     
+      // var abc = 100; //global [window]
+
+      // function yourFunction() {
+      //   var def = 200; //local to function
+      //   document.write(abc+def);
+      // }
+      // yourFunction();
+      // alert(abc); // 100
+      // alert(def); //undefined
+     
+      //////////////////////////////
+     
+    //  function descending(a,b){
+    //   return b-a;
+    //  }
+
+    //   var myArray = [1,2,3,4,5];
+    //   console.log(myArray.sort(descending));
+
+    //////////////////////////////////////
+    var object = {
+      x : 100,
+      y : 200,
+      z : function() {
+        return this.x*this.y;
+      }
+    };
+    function myObject() {
+      this.x = 100;
+      this.y = 200;
+      this.z = function() {
+         return this.x*this.y;
+      }
+    }
+    
+   var obj = new myObject();
+
+    // console.log(object.x);
+    // console.log(object.y);
+    // console.log(object.z());
+    
+    // console.log(obj.x);
+    // console.log(obj.y);
+    console.log(obj.z());
+    </script>
+  </body>
+</html>

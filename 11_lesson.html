@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>`this` Javascript</title>
+  </head>
+  <body>
+    <div id="one" onclick="x(this)">Hello World</div>
+    <script>
+      //window
+      //  function x(event) {
+      //   alert(event);
+      //   alert(this);
+      //  }
+      ////  x();
+      function myObject() {
+        var a = 300;
+        this.x = 100;
+        this.y = 200;
+        this.z = function() {
+          return this.x*this.y;
+        }
+      }
+      var O = new myObject();
+      O.x = 300;
+      console.log(O.a); // undefiend
+      console.log(O.x); // 100
+      console.log(O.y); // 200
+      console.log(O.z()); // 20000
+
+    </script>
+  </body>
+</html>

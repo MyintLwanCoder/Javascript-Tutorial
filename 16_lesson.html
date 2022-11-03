@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Static Methods/Properties</title>
+  </head>
+  <body>
+    <script>
+       function myFunction() {
+        this.x = 100;
+        this.y = function() {
+         this.x*this.x;
+        }
+       }
+        
+       myFunction.prototype.abc = 200;
+        
+        myFunction.defa = function() {
+
+        };
+
+       myFunction.def = 300;
+
+       var obj = new myFunction();
+       // obj.abc = 100;
+
+       console.log(obj.abc) // 200
+       console.log(obj.def); //undefined
+
+       var obj2 = new myFunction();
+       console.log(obj2.def);
+    </script>
+  </body>
+</html>

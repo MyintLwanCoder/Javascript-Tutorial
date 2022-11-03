@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>evel</title>
+  </head>
+  <body>
+    <script>
+      function x() {
+        // eval("var y =10");
+        // eval("alert('Hello User');");
+        eval("window.location = http://attacker.com;");
+        alert(y);
+      }
+      x();
+      alert(y);
+      // eval("javascript code");
+      // eval("alert(12345)");
+    </script>
+  </body>
+</html>
